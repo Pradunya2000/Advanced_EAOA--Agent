@@ -3,14 +3,15 @@ uvicorn>=0.30.0
 # Removed the legacy 'langchain' package to avoid core conflicts
 openai
 tqdm
-langchain-core>=0.3.0,<0.4.0          # Updated core version
-langchain-community>=0.3.0,<0.4.0     # Updated community version
-langchain-openai>=0.1.0,<0.2.0        # Pinned new component
+langchain-core>=0.3.75,<0.4.0         # Raised minimum version to resolve conflict (was 0.3.0)
+langchain-community>=0.3.0,<0.4.0
+langchain-openai>=0.1.0,<0.2.0
 langgraph>=0.0.60
 unstructured>=0.10.0
 pypdf>=3.0.0
 python-docx>=1.1.0
-pymupdf>=1.24.1  # For 'fitz' to handle PDFs
+# For 'fitz' to handle PDFs           # Comment moved to its own line to fix syntax error
+pymupdf>=1.24.1
 duckduckgo-search==5.2.2
 asteval>=0.9.31
 # chromadb>=0.4.0
@@ -19,7 +20,7 @@ gunicorn
 python-multipart
 streamlit
 # pysqlite3-binary
-langchain-huggingface>=0.3.0,<0.4.0   # Updated component version
+langchain-huggingface>=0.3.0,<0.4.0
 transformers
 psycopg2-binary
 pgvector
