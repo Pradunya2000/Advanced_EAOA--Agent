@@ -3,9 +3,9 @@ uvicorn>=0.30.0
 # Removed the legacy 'langchain' package to avoid core conflicts
 openai
 tqdm
-langchain-core==0.3.77                     # Pinned to highest recent stable version
-langchain-community==0.3.30                # Pinned to highest recent stable version
-langchain-openai==0.1.25                   # Pinned to highest recent stable version
+langchain-core==0.2.40                     # Revert core to 0.2.x for compatibility
+langchain-community==0.3.24                # Selects a community version compatible with 0.2.x core
+langchain-openai==0.1.25                   # Keep openai at 0.1.25 which demands 0.2.x core
 langgraph>=0.0.60
 unstructured>=0.10.0
 pypdf>=3.0.0
@@ -20,7 +20,7 @@ gunicorn
 python-multipart
 streamlit
 # pysqlite3-binary
-langchain-huggingface==0.3.1               # Pinned to highest recent stable version
+langchain-huggingface==0.3.1               # This is compatible with 0.2.x or 0.3.x core
 transformers
 psycopg2-binary
 pgvector
