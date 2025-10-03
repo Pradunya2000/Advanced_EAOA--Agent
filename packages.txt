@@ -1,3 +1,6 @@
-# packages.txt
+# packages.txt should contain only these lines:
 libpq-dev
 build-essential
+libmagic1
+libxml2
+libxslt1-dev
