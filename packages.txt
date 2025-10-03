@@ -1,4 +1,3 @@
-# packages.txt should contain only these lines:
 libpq-dev
 build-essential
 libmagic1
