@@ -20,7 +20,7 @@ gunicorn
 python-multipart
 streamlit
 # pysqlite3-binary
-langchain-huggingface==0.2.0               # Rolled back to 0.2.x to align dependencies
+langchain-huggingface==0.1.0               # ROLLED BACK AGAIN to align with 0.2.x core
 transformers
 psycopg2-binary
 pgvector
