@@ -5,15 +5,14 @@ openai
 tqdm
 fastapi>=0.111.0
 uvicorn>=0.30.0
-# langchain>=0.1.0 (The line above covers this)
-langchain-community      # WAS: langchain-community==0.0.36
-langchain-openai         # WAS: langchain-openai>=0.1.0
-langgraph                # WAS: langgraph>=0.0.60
+langchain-community 
+langchain-openai
+langgraph
 unstructured>=0.10.0
 pypdf>=3.0.0
 python-docx>=1.1.0
 pymupdf>=1.24.1  # For 'fitz' to handle PDFs
-duckduckgo-search==5.2.2
+duckduckgo-search # WAS: duckduckgo-search==5.2.2 (Newer version required for 'ddgs' module)
 asteval>=0.9.31
 # chromadb>=0.4.0
 sentence-transformers>=2.7.0
@@ -23,7 +22,6 @@ streamlit
 # pysqlite3-binary
 langchain-huggingface
 transformers
-# sentence-transformers (DUPLICATE REMOVED)
 psycopg2-binary
 pgvector
 faiss-cpu
