@@ -12,8 +12,7 @@ unstructured>=0.10.0
 pypdf>=3.0.0
 python-docx>=1.1.0
 pymupdf>=1.24.1  # For 'fitz' to handle PDFs
-duckduckgo-search
-ddgs               # NEW: Explicitly installing the required package.
+ddgs               # ONLY the modern 'ddgs' package is listed.
 asteval>=0.9.31
 # chromadb>=0.4.0
 sentence-transformers>=2.7.0
